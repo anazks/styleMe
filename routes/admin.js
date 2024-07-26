@@ -10,7 +10,7 @@ router.get('/home',async function(req,res){
     try {
       let cloths = await clothModel.find()
       console.log(cloths,"-----")
-      res.render('admin/home',{cloths})
+      res.render('admin/Home',{cloths})
     } catch (error) {
       
     }
